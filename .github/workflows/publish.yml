@@ -33,7 +33,6 @@ jobs:
       - name: Build with Next.js 
         run: |
           cd cvc-api
-          cd src
           npx next build
 
       - name: Upload artifact
