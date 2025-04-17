@@ -2,7 +2,7 @@ import { LuFileSearch,LuGithub  } from "react-icons/lu";
 import Env from "@/lib/env";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { WrittenComponent } from "@/components/ui/WrittenComponent";
-
+ 
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] ml-0.5 mr-0.5">
