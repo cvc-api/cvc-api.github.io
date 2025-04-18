@@ -1,5 +1,5 @@
 import { LuFileSearch,LuGithub  } from "react-icons/lu";
-import Env from "@/lib/env";
+// import Env from "@/lib/env";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { WrittenComponent } from "@/components/ui/WrittenComponent";
 import { RainbowButton } from "@/components/ui/rainbow-button";
@@ -28,7 +28,7 @@ export default function Home() {
             <a
                 // className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
                 className="flex items-center justify-center gap-2 text-sm font-medium sm:text-base"
-                href={Env.APP_URL + "/docs"}
+                href={"/docs"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
