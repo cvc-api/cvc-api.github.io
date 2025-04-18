@@ -2,6 +2,7 @@ import { LuFileSearch,LuGithub  } from "react-icons/lu";
 import Env from "@/lib/env";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { WrittenComponent } from "@/components/ui/WrittenComponent";
+import { RainbowButton } from "@/components/ui/rainbow-button";
  
 export default function Home() {
   return (
@@ -20,8 +21,22 @@ export default function Home() {
             <CodeBlock />
         </div>
 
+
+
         <div className="flex mt-2 md:mt-8 gap-4 items-center flex-col sm:flex-row">
-          <a
+          <RainbowButton className="rounded-full inline-block hover:bg-[#383838] h-12">
+            <a
+                // className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+                className="flex items-center justify-center gap-2 text-sm font-medium sm:text-base"
+                href={Env.APP_URL + "/docs"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LuFileSearch className="w-6 h-6"/>
+                Explore the Docs
+            </a>
+            </RainbowButton>
+          {/* <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href={Env.APP_URL + "/docs"}
             target="_blank"
@@ -29,8 +44,7 @@ export default function Home() {
           >
             <LuFileSearch className="w-6 h-6"/>
             Explore the Docs
-          </a>
-          
+          </a> */}
           <a
             className="rounded-full bg-white border border-solid border-black/[.08] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="https://github.com/rob-m1/california-virtual-campus-api"
