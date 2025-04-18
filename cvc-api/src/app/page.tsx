@@ -1,4 +1,5 @@
-import { LuFileSearch,LuGithub  } from "react-icons/lu";
+import { LuGithub  } from "react-icons/lu";
+// LuFileSearch
 // import Env from "@/lib/env";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { WrittenComponent } from "@/components/ui/WrittenComponent";
