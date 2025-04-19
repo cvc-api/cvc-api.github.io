@@ -1,12 +1,16 @@
+"use client"
 import { LuGithub  } from "react-icons/lu";
 // LuFileSearch
 // import Env from "@/lib/env";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { WrittenComponent } from "@/components/ui/WrittenComponent";
 import { RainbowButton } from "@/components/ui/rainbow-button";
- 
+// import { Spotlight, GridBackground } from "@/components/spotlight-new";
 export default function Home() {
   return (
+    // <div className=" w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    //         {/* <GridBackground /> */}
+    //         {/* <Spotlight /> */}
     <div className="font-[family-name:var(--font-geist-sans)] ml-0.5 mr-0.5">
       <main className="flex flex-col justify-center items-center text-center min-h-screen ">
         <span className="sm:mb-2 md:mb-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500"><strong className="text-md md:text-4xl ">California Virtual Campus API</strong></span>
@@ -61,6 +65,10 @@ export default function Home() {
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <div></div>
       </footer>
+      <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+
+      </div>
     </div>
+    // {/* </div> */}
   );
 }
