@@ -8,15 +8,15 @@ import { RainbowButton } from "@/components/ui/rainbow-button";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] ml-0.5 mr-0.5">
-      <main className="flex flex-col justify-center items-center text-center min-h-screen">
-        <span className="sm:mb-2 md:mb-10"><strong className="text-md md:text-4xl ">California Virtual Campus API</strong></span>
+      <main className="flex flex-col justify-center items-center text-center min-h-screen ">
+        <span className="sm:mb-2 md:mb-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500"><strong className="text-md md:text-4xl ">California Virtual Campus API</strong></span>
         <span>
-          <strong className="md:text-8xl text-xl">
+          <strong className="md:text-6xl text-xl ">
           <WrittenComponent/>
           </strong>
           </span>
-        <div className="mb-2 tracking-[-.01em] space-x-5 ">
-            <div>
+        <div className="mb-2 tracking-[-.01em] space-x-2">
+            <div className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500">
             Get started with:
             </div>
             <CodeBlock />
@@ -32,7 +32,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <RainbowButton className="rounded-full inline-block hover:bg-[#383838] h-12">
+          <RainbowButton className="rounded-full inline-block h-12">
                 {/* <LuFileSearch className="w-6 h-6"/> */}
                 Explore the Docs
             </RainbowButton>
@@ -53,7 +53,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LuGithub className="w-6 h-6" />
+            <LuGithub className="w-6 h-6 " />
             GitHub
           </a>
         </div>

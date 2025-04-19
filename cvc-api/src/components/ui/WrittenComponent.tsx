@@ -10,7 +10,7 @@ function WrittenComponent(){
     //     clearTimeout(timer)
     // }
     return(
-        <div className="mb-4 md:mb-24">
+        <div className="mb-4 md:mb-24 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-600">
             Supercharge your course hunt with real-time data.
         </div>
         // <div className='h-64'>

@@ -20,10 +20,10 @@ export default function Docs(){
     return (
         <>
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <a href={Env.APP_URL} className="mb-4 sm:mb-0"><span ><strong className="text-md md:text-4xl ">California Virtual Campus API</strong></span></a>
+    <a href={Env.APP_URL} className="mb-4 sm:mb-0"><span ><strong className="text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700">California Virtual Campus API</strong></span></a>
       <main className="w-full flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 
-      <span className="sm:mb-1 mb-2"><strong className="text-md md:text-4xl ">Methods:</strong></span>
+      <span className="sm:mb-1 mb-2"><strong className="text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500">Methods:</strong></span>
         <ol className="w-full list-inside list-none text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-2">
           <li>
             <ItemMethod name='getCourseContentByID(id:int)' description={`Using a provided course ID, returns a course object with info scraped from the CVC course webpage.<br><br> <b>Parameters:</b><br> id (int): The CVC ID of the desired course<br><br> <b>Raises:</b><br> ValueError: Inputted ID, id, is invalid.<br><br> <b>Returns:</b><br> course: A course object filled with the desired course info.<br>`}/>
@@ -39,7 +39,7 @@ export default function Docs(){
           </li>
         </ol>
 
-      <span className="sm:mb-1 mb-2"><strong className="text-md md:text-4xl ">Classes:</strong></span>
+      <span className="sm:mb-1 mb-2"><strong className="text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500">Classes:</strong></span>
         <ol className="w-full list-inside list-none text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-2">
           <li>
             <ItemMethod name='course' description={`

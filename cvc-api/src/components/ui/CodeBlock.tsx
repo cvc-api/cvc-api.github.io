@@ -19,7 +19,7 @@ function CodeBlock() {
             </code>
             <TooltipProvider>
               <Tooltip>
-                <TooltipTrigger><LuCopy className="inline align-middle hover:text-gray-500 dark:hover:text-gray-300" onClick={copied}/></TooltipTrigger>
+                <TooltipTrigger><LuCopy className="inline align-middle hover:text-gray-500 text-gray-300" onClick={copied}/></TooltipTrigger>
                 <TooltipContent>
                   <p>Copy to Clipboard</p>
                 </TooltipContent>
