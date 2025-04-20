@@ -10,9 +10,15 @@ function WrittenComponent(){
     //     clearTimeout(timer)
     // }
     return(
-        <div className="mb-4 md:mb-24 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-600">
-            Supercharge your course hunt with real-time data.
+        <>
+        
+        <div className="mb-1 md:mb-4 md:text-6xl w-200 text-xl text-white bg-clip-text bg-gradient-to-b from-white via-white to-gray-700">
+            Supercharge your course
         </div>
+        <div className="mb-2 md:mb-6 md:text-6xl w-200 text-xl text-white bg-clip-text bg-gradient-to-b from-white via-white to-gray-700">
+                hunt with real-time data.
+        </div>
+        </>
         // <div className='h-64'>
         //     <Typewriter
         //     words={['']}

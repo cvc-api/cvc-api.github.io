@@ -13,16 +13,16 @@ export default function Home() {
     //         {/* <Spotlight /> */}
     <div className="font-[family-name:var(--font-geist-sans)] ml-0.5 mr-0.5">
       <main className="flex flex-col justify-center items-center text-center min-h-screen ">
-        <span className="sm:mb-2 md:mb-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500"><strong className="text-md md:text-4xl ">California Virtual Campus API</strong></span>
+        {/* <span className="sm:mb-2 md:mb-10 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500"><strong className="text-md md:text-4xl ">California Virtual Campus API</strong></span> */}
         <span>
-          <strong className="md:text-6xl text-xl ">
-          <WrittenComponent/>
-          </strong>
+          {/* <strong className="md:text-6xl text-xl "> */}
+          <WrittenComponent />
+          {/* </strong> */}
           </span>
         <div className="mb-2 tracking-[-.01em] space-x-2">
-            <div className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500">
+            {/* <div className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-500">
             Get started with:
-            </div>
+            </div> */}
             <CodeBlock />
         </div>
 
@@ -65,9 +65,9 @@ export default function Home() {
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <div></div>
       </footer>
-      <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      {/* <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
 
-      </div>
+      </div> */}
     </div>
     // {/* </div> */}
   );

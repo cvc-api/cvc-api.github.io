@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 @config "../../tailwind.config.js";
 
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -52,8 +51,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0 0 1);
-  /* --background: #004b96, linear-gradient(90deg, rgba(0, 75, 150, 1) 0%, rgba(0, 0, 0, 1) 100%); */
+  --background: oklch(0.2 0 1);
   --foreground: oklch(0.145 0 0);
   --card: oklch(0.25 0 0);
   --card-foreground: oklch(0.9 0 0);
@@ -89,6 +87,14 @@
   --color-3: 210 100% 63%;
   --color-4: 195 100% 63%;
   --color-5: 90 100% 63%;
+  /* --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%; */
 }
 
 @layer base {
@@ -98,4 +104,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.dark {
+  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
