@@ -1,85 +1,77 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import Env from "@/lib/env";
-const ItemMethod = ({name,description}:{name:string,description:string}) => {
-  return(
-    <Card>
-      <CardHeader>
-        <CardTitle>{name}</CardTitle>
-      </CardHeader>
-      <CardContent><div dangerouslySetInnerHTML={{__html:description}}></div></CardContent>
-    </Card>
-  )
-}
-    
+// import {
+//     Card,
+//     CardContent,
+//     CardHeader,
+//     CardTitle,
+//   } from "@/components/ui/card"
+import { CodeBlock } from "@/components/ui/CodeBlock";
+// import VariableProperty from "@/components/ui/variableProperty";
+  // const ItemMethod = ({name,description}:{name:string,description:string}) => {
+  //   return(
+  //     <Card>
+  //       <CardHeader>
+  //         <CardTitle>{name}</CardTitle>
+  //       </CardHeader>
+  //       <CardContent><div dangerouslySetInnerHTML={{__html:description}}></div></CardContent>
+  //     </Card>
+  //   )
+  // }
+
+
 export default function Docs(){
     return (
         <>
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <a href={Env.APP_URL} className="mb-4 sm:mb-0 text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"><span >
-      {/* <strong className="text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"> */}
-        California Virtual Campus API
-        {/* </strong> */}
-      </span></a>
-      <main className="w-full flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
 
-      <a href={"/docs#Methods"} className="mb-4 sm:mb-0 text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"><span >
-      {/* <strong className="text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"> */}
-        Methods:
-        {/* </strong> */}
-      </span></a>        <ol className="w-full list-inside list-none text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-2">
-          <li>
-            <ItemMethod name='getCourseContentByID(id:int)' description={`Using a provided course ID, returns a course object with info scraped from the CVC course webpage.<br><br> <b>Parameters:</b><br> id (int): The CVC ID of the desired course<br><br> <b>Raises:</b><br> ValueError: Inputted ID, id, is invalid.<br><br> <b>Returns:</b><br> course: A course object filled with the desired course info.<br>`}/>
-          </li>
-          <li>
-            <ItemMethod name='getCourseIDsBySearch(collegeName:str, C_ID:str, courseSymbol:str, courseName:str)' description={`Using the provided college name, <br> searches for all the CVC IDs of the classes in the college which would be returned in a query with the above parameters. <br> Returns a list of the found IDs. <br><br> <b>Parameters:</b><br> collegeName (str): Name of the college whose classes you will search. <br> C_ID (str): The C-ID of the class you want to find. <br> courseSymbol (str): The course symbol of the class you want to find. <br> courseName (str): The name of the course you want to find. <br><br> <b>Returns:</b><br> A list of CVC IDs. <br>`}/>
-          </li>
-          <li>
-            <ItemMethod name='getCourseIDsByScraping(collegeName:str, C_ID:str, courseSymbol:str, courseName:str)' description={`Using the provided college name, <br> searches for all the CVC IDs of the classes in the college which would be returned in a query with the above parameters. <br> Returns a list of the found IDs. <br> This method uses Selenium to perform the search query. <br><br> <b>Parameters:</b><br> collegeName (str): Name of the college whose classes you will search. <br> C_ID (str): The C-ID of the class you want to find. <br> courseSymbol (str): The course symbol of the class you want to find. <br> courseName (str): The name of the course you want to find. <br><br> <b>Returns:</b><br> A list of CVC IDs. <br>`}/>
-          </li>
-          <li>
-            <ItemMethod name='getCourseContentByScraping(collegeName:str, C_ID:str, courseSymbol:str, courseName:str)' description={`Using the provided college name, <br> searches for all the CVC IDs of the classes in the college which would be returned in a query with the above parameters. <br> Returns a list of each of their corresponding course objects. <br> This method uses Selenium to perform the search query. <br><br> <b>Parameters:</b> <br> collegeName (str): Name of the college whose classes you will search. <br> C_ID (str): The C-ID of the class you want to find. <br> courseSymbol (str): The course symbol of the class you want to find. <br> courseName (str): The name of the course you want to find. <br><br> <b>Returns:</b> <br> courses: A list of course objects. <br>`}/>
-          </li>
-        </ol>
+      <main className="w-full flex flex-col  row-start-2 items-center sm:items-start">
+        <span className="text-white font-bold text-4xl mb-2">
+            Installation
+        </span>
+        <span className="text-gray-400 mb-2 ">
+          Run the following command in your terminal.
+        </span>
+        <div className="mb-8">
+        <CodeBlock />
 
-        <a href={"/docs#Classes"} className="mb-4 sm:mb-0 text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"><span >
-      {/* <strong className="text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"> */}
-        Classes:
-        {/* </strong> */}
-      </span></a>        <ol className="w-full list-inside list-none text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] space-y-2">
+        </div>
+        {/* <span className="text-white mb-8">
+          Properties:
+        </span>
+        <ol className="w-120">
           <li>
-            <ItemMethod name='course' description={`
-(str)         cvc_id          <br>
-(str)         college_name    <br>
-(str)         class_name      <br>
-(str)         class_symbol    <br>
-(str)         C_ID            <br>
-(str)         course_description <br>
-(str)         location        <br>
-(int)         units           <br>
-(str)        unitType        <br>
-(list)       prereqs         <br>
-(list)       sections        <br>`}/>
+            <VariableProperty name='cvc_id' type='string' description="Course ID as assigned on the CVC platform."></VariableProperty>
           </li>
           <li>
-            <ItemMethod name='courseSection' description={`
-(str)         duration          <br>
-(str)         section           <br>
-(str)         format            <br>
-(bool)       zeroTextbookCost  <br>
-(list)       time              <br>
-(str)         prof              <br>
-(int)         currSeatCount     <br>
-(int)         tuition           <br>
-(str)         sectionNote       <br>
-(str)         semester          <br>
-(str)         registration      <br>`}/>
+            <VariableProperty name='college_name' type='string' description="Name of the college this course belongs to."></VariableProperty>
           </li>
-        </ol>
+          <li>
+            <VariableProperty name='class_name' type='string' description="Name of the course."></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='class_symbol' type='string' description="Abbreviation of the course in its home institution, such as HIST101 or COMPSCI001."></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='C_ID' type='string' description="C-ID assigned to the course. You can find more info at https://www.c-id.net/courses"></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='course_description' type='string' description="Course description according to the CVC course page."></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='location' type='string' description="Location where the course is being offered."></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='units' type='int' description="Number of units this course has."></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='unitType' type='string' description="The type of units this course has."></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='prereqs' type='list[string]' description="A list of course symbols associated with this prerequisite."></VariableProperty>
+          </li>
+          <li>
+            <VariableProperty name='sections' type='list[courseSection]' description="A list of courseSection objects with data of the currently displayed course sections on the CVC course page."></VariableProperty>
+          </li>
+        </ol> */}
 
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

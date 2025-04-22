@@ -1,35 +1,12 @@
-// import {
-//     Card,
-//     CardContent,
-//     CardHeader,
-//     CardTitle,
-//   } from "@/components/ui/card"
 import VariableProperty from "@/components/ui/variableProperty";
-import Env from "@/lib/env";
-  // const ItemMethod = ({name,description}:{name:string,description:string}) => {
-  //   return(
-  //     <Card>
-  //       <CardHeader>
-  //         <CardTitle>{name}</CardTitle>
-  //       </CardHeader>
-  //       <CardContent><div dangerouslySetInnerHTML={{__html:description}}></div></CardContent>
-  //     </Card>
-  //   )
-  // }
-
-
-export default function Docs(){
+export default function CourseSection(){
     return (
         <>
-    <div className="items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <a href={Env.APP_URL} className="mb-16 sm:mb-16 text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"><span >
-      {/* <strong className="text-md md:text-4xl text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-700"> */}
-        California Virtual Campus API
-        {/* </strong> */}
-      </span></a>
+    <div className="items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+
 
       <main className="w-full flex flex-col  row-start-2 items-center sm:items-start">
-        <span className="text-white font-bold text-4xl mb-2 mt-8">
+        <span className="text-white font-bold text-4xl mb-2">
             courseSection
         </span>
         <span className="text-gray-400 mb-8 ">
