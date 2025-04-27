@@ -72,7 +72,6 @@ export default function Docs(){
             <VariableProperty name='sections' type='list[courseSection]' description="A list of courseSection objects with data of the currently displayed course sections on the CVC course page."></VariableProperty>
           </li>
         </ol> */}
-
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <div></div>

@@ -5,6 +5,7 @@ import { LuGithub  } from "react-icons/lu";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { WrittenComponent } from "@/components/ui/WrittenComponent";
 import { RainbowButton } from "@/components/ui/rainbow-button";
+import DownloadCounter from "@/components/downloadCounter";
 // import { Spotlight, GridBackground } from "@/components/spotlight-new";
 export default function Home() {
   return (
@@ -61,6 +62,8 @@ export default function Home() {
             GitHub
           </a>
         </div>
+      <DownloadCounter></DownloadCounter>
+
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <div></div>
