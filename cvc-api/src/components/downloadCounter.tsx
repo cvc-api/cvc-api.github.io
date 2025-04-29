@@ -13,7 +13,7 @@ export default function DownloadCounter() {
       .then((svg) => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(svg, 'image/svg+xml');
-        const targetText = doc.querySelector('text[x="875"][y="140"]');
+        const targetText = doc.querySelector('text[y="140"][textLength="190"]');
         if (targetText) {
           setDownloadCount(Number(targetText.textContent));
         } else {
@@ -47,7 +47,7 @@ export default function DownloadCounter() {
                 <CountUp end={downloadCount!} duration={5} className='text-3xl text-white font-bold' />
             ) : (
                 // Failed to retrieve data
-                <div className='text-3xl text-white font-bold'>355</div>
+                <CountUp end={357} duration={5} className='text-3xl text-white font-bold' />
             )}
             <span className='text-lg text-white'>Downloads</span>
             </>
