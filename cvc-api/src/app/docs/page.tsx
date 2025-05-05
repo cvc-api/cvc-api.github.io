@@ -4,7 +4,7 @@
 //     CardHeader,
 //     CardTitle,
 //   } from "@/components/ui/card"
-import Demo from "@/components/Demo";
+// import Demo from "@/components/Demo";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 // import VariableProperty from "@/components/ui/variableProperty";
   // const ItemMethod = ({name,description}:{name:string,description:string}) => {
