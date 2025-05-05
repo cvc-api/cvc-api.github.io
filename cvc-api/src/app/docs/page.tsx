@@ -4,6 +4,7 @@
 //     CardHeader,
 //     CardTitle,
 //   } from "@/components/ui/card"
+import Demo from "@/components/Demo";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 // import VariableProperty from "@/components/ui/variableProperty";
   // const ItemMethod = ({name,description}:{name:string,description:string}) => {
@@ -32,7 +33,7 @@ export default function Docs(){
         </span>
         <div className="mb-8">
         <CodeBlock />
-
+        {/* <Demo></Demo> */}
         </div>
         {/* <span className="text-white mb-8">
           Properties:

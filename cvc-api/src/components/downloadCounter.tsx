@@ -13,7 +13,7 @@ export default function DownloadCounter() {
       .then((svg) => {
         const parser = new DOMParser();
         const doc = parser.parseFromString(svg, 'image/svg+xml');
-        const targetText = doc.querySelector('text[y="140"][textLength="190"]');
+        const targetText = doc.querySelector('text[y="140"][textLength="170"]');
         if (targetText) {
           setDownloadCount(Number(targetText.textContent));
         } else {
